@@ -30,7 +30,10 @@ button {
     /* cssmatic */
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
     text-align: center;
-
+    /* 3 */
+    transform: translateY(-100%);
+    transition: transform .5s ease-in;
+    z-index: -1;
 }
 
 .dropdownLink{
@@ -47,4 +50,18 @@ button {
     color: #f9f9f9;
     background-color: #4a4a4f;
     
+}
+/* 3 */
+.dropdown {
+    width: 150px;
+    position: relative;
+    
+}
+
+.dropdown:hover button {
+    background-color: #018ec5;
+}
+
+.dropdown:hover .dropdownMenu{
+    transform: translateY(0);
 }
